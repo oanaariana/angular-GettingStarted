@@ -4,10 +4,10 @@ import { IProduct } from './product';
 import { ProductService } from './product.service';
 
 @Component({
-    selector: 'pm-products',
     templateUrl: './product-list.component.html',
     styleUrls: ['./product-list.component.css']
 })
+
 export class ProductListComponent implements OnInit {
     pageTitle: string = 'Product List';
     imageWidth: number = 50;
@@ -52,5 +52,5 @@ export class ProductListComponent implements OnInit {
                     this.filteredProducts = this.products;
                 },
                     error => this.errorMessage = <any>error);
-    };
+    }
 }
